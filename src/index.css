@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+    color: #fff;
+    background:#38a7ff;
+    font-family: raleway;
+    width: 100%;
+    min-height: 100vh;
+}
+.dashboard{
+    color: #fff;
+    background:#38a7ff;
+    font-family: raleway;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    min-height: 450px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+    background:#38a7ff;
+    box-shadow: 30px 30px 60px #308ed9, -30px -30px 60px #40c0ff;
+}
+a{
+    font-weight: 600;
+    color: #fff;
+}
+.input-field{
+    position:relative;
+}
+.validate{
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    color: #fff;
+    background: #38a7ff;
+    box-shadow: inset 5px 5px 5px #308ed9,inset -5px -5px 5px #40c0ff;
+}
+.is-invalid{
+    color: #38a7ff;
+}
+.is-invalid::placeholder{
+    color: #38a7ff;
+}
+.validate::placeholder{
+    color:#fff;
+}
+.second-btn{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: #38a7ff;
+    box-shadow: 8px 8px 15px #308ed9, -8px -8px 15px #40c0ff;
+    transition: box-shadow 0.35s ease !important;
+    cursor: pointer;
+}
+#toggle{
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    transform: translateY(-49%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.second-btn:active{
+    background: linear-gradient(145deg,#30b7ff,#39bbff);
+    box-shadow: 5px 5px 10px #30a7ff, -5px -5px 10px #38a7ff;
+    border: none;
+    outline: none;
+}
+.content p{
+    color: #d6d6d6;
+    padding: 20px;
+}
+.text-danger{
+    position: relative;
+    color: #f00;
+    display: block;
+    font-style: italic;
+    transform:translateY(-20px);
+    font-size: 14px;
+}
